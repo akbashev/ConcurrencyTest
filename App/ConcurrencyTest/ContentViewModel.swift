@@ -111,13 +111,13 @@ extension ContentViewModel {
     var subtitle: String {
       switch self {
       case .mainThread: "Runs one loop on main thread."
-      case .customThread: "Runs \(loopCount) loops on custom thread."
-      case .asyncTask: "Runs \(loopCount) loops in one async task."
-      case .multipleAsyncTasks: "Runs \(loopCount) loops, \(multipleExecutionCount) times in simple tasks."
-      case .simpleActor: "Runs \(loopCount) loops, \(multipleExecutionCount) times wrapped in actor."
-      case .workerPool: "Runs \(loopCount) loops, \(multipleExecutionCount) times using \(workerPoolCount) workers."
-      case .serialActor: "Runs \(loopCount) loops, \(multipleExecutionCount) times on one thread."
-      case .serialWorkerPool: "Runs \(loopCount) loops, \(multipleExecutionCount) times using \(serialWorkerPoolCount) workers, each having separate thread."
+      case .customThread: "Runs \(Config.loopCount) loops on custom thread."
+      case .asyncTask: "Runs \(Config.loopCount) loops in one async task."
+      case .multipleAsyncTasks: "Runs \(Config.loopCount) loops, \(Config.multipleExecutionCount) times in simple tasks."
+      case .simpleActor: "Runs \(Config.loopCount) loops, \(Config.multipleExecutionCount) times wrapped in actor."
+      case .workerPool: "Runs \(Config.loopCount) loops, \(Config.multipleExecutionCount) times using \(Config.workerPoolCount) workers."
+      case .serialActor: "Runs \(Config.loopCount) loops, \(Config.multipleExecutionCount) times on one thread."
+      case .serialWorkerPool: "Runs \(Config.loopCount) loops, \(Config.multipleExecutionCount) times using \(Config.serialWorkerPoolCount) workers, each having separate thread."
       }
     }
   }
@@ -134,7 +134,7 @@ extension ContentViewModel {
     await withCheckedContinuation { continuation in
       thread.execute {
         var result = HighCpuLoaderResult()
-        for _ in 1...multipleExecutionCount {
+        for _ in 1...Config.multipleExecutionCount {
           let next = self.highCpuLoad.loop()
           result.count += next.count
         }
@@ -180,7 +180,7 @@ extension ContentViewModel {
   private func executeMultiple(_ task: @escaping () async throws -> (HighCpuLoaderResult)) async throws -> HighCpuLoaderResult {
     do {
       return try await withThrowingTaskGroup(of: HighCpuLoaderResult.self) { group in
-        for _ in 1...multipleExecutionCount {
+        for _ in 1...Config.multipleExecutionCount {
           group.addTask { try await task() }
         }
         return try await group.reduce(into: HighCpuLoaderResult(), {

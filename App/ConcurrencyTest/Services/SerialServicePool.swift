@@ -4,7 +4,7 @@ actor SerialServicePool {
   
   lazy var workerPool: WorkerPool<SerialServicePoolWorker> = {
     var workers: [SerialServicePoolWorker] = []
-    for i in 1...serialWorkerPoolCount {
+    for i in 1...Config.serialWorkerPoolCount {
       workers.append(SerialServicePoolWorker(index: i))
     }
     return WorkerPool(

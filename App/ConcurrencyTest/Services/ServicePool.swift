@@ -5,7 +5,7 @@ actor ServicePool {
   lazy var workerPool: WorkerPool = .init(
     workers: .init(
       repeating: ServicePoolWorker(),
-      count: workerPoolCount
+      count: Config.workerPoolCount
     )
   )
   

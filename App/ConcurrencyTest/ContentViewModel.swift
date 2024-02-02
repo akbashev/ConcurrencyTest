@@ -40,10 +40,10 @@ class ContentViewModel {
   }
   
   func executeAll() {
+    self.results.removeAll()
     Task {
       await self.disable()
       for action in Action.allCases {
-        await self.update(.none, for: action)
         do {
           let begin = Date()
           var result = await switch action {

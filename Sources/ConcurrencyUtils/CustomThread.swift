@@ -1,6 +1,6 @@
 import Foundation
 
-/// First time writing some thread 🫠 Not sure if it's correct and optimal, but seems like working.
+/// Not sure if it's correct and optimal, but seems like working.
 public class CustomThread: @unchecked Sendable {
   
   private lazy var operationQueue: OperationQueue = {

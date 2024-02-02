@@ -18,7 +18,7 @@
 		7103161D2B6CDFF6005757F5 /* ServicePool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7103161C2B6CDFF6005757F5 /* ServicePool.swift */; };
 		7103161F2B6CE019005757F5 /* SerialServicePool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7103161E2B6CE019005757F5 /* SerialServicePool.swift */; };
 		710316212B6CE045005757F5 /* SerialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710316202B6CE045005757F5 /* SerialService.swift */; };
-		710316242B6CE0A6005757F5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710316232B6CE0A6005757F5 /* Config.swift */; };
+		710316242B6CE0A6005757F5 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710316232B6CE0A6005757F5 /* config.swift */; };
 		710316262B6CE628005757F5 /* HighCpuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710316252B6CE628005757F5 /* HighCpuLoader.swift */; };
 		710316282B6CE82B005757F5 /* simpleLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710316272B6CE82B005757F5 /* simpleLoop.swift */; };
 		7103162A2B6CEB3F005757F5 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710316292B6CEB3F005757F5 /* ContentViewModel.swift */; };
@@ -38,7 +38,7 @@
 		7103161C2B6CDFF6005757F5 /* ServicePool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePool.swift; sourceTree = "<group>"; };
 		7103161E2B6CE019005757F5 /* SerialServicePool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialServicePool.swift; sourceTree = "<group>"; };
 		710316202B6CE045005757F5 /* SerialService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialService.swift; sourceTree = "<group>"; };
-		710316232B6CE0A6005757F5 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		710316232B6CE0A6005757F5 /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
 		710316252B6CE628005757F5 /* HighCpuLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighCpuLoader.swift; sourceTree = "<group>"; };
 		710316272B6CE82B005757F5 /* simpleLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleLoop.swift; sourceTree = "<group>"; };
 		710316292B6CEB3F005757F5 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 			children = (
 				710316152B6CDFAB005757F5 /* Services */,
 				710316002B6C1DCF005757F5 /* MainApp.swift */,
-				710316232B6CE0A6005757F5 /* Config.swift */,
+				710316232B6CE0A6005757F5 /* config.swift */,
 				710316022B6C1DCF005757F5 /* ContentView.swift */,
 				710316292B6CEB3F005757F5 /* ContentViewModel.swift */,
 				710316042B6C1DD1005757F5 /* Assets.xcassets */,
@@ -194,7 +194,7 @@
 			files = (
 				710316032B6C1DCF005757F5 /* ContentView.swift in Sources */,
 				710316012B6C1DCF005757F5 /* MainApp.swift in Sources */,
-				710316242B6CE0A6005757F5 /* Config.swift in Sources */,
+				710316242B6CE0A6005757F5 /* config.swift in Sources */,
 				7103161B2B6CDFE3005757F5 /* Service.swift in Sources */,
 				710316192B6CDFC9005757F5 /* SerialHighCpuLoad.swift in Sources */,
 				710316172B6CDFB7005757F5 /* HighCpuLoad.swift in Sources */,

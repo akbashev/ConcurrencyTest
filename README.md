@@ -19,11 +19,11 @@ Simple test to check different concurrency strategies in Swift when an app have 
 Examples are:
 * Run on main thread
 * Run on custom thread[^1]
-* Run on regular async/await
-* Run on actor
-* Run on actor using worker pool pattern
+* Run using regular async/await
+* Run using simple actor
+* Run using an actor with worker pool pattern
 * High cpu loader is an actor with custom executor[^2]
-* Run on actor using worker pool pattern, where each worker is high cpu loader actor with custom executor[^2]
+* Run using an actor with worker pool pattern, where each worker is high cpu loader actor with custom executor[^2]
 
 ## Results
 Screenshots of the app and CPU usage:

@@ -20,7 +20,7 @@
 		710316212B6CE045005757F5 /* SerialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710316202B6CE045005757F5 /* SerialService.swift */; };
 		710316242B6CE0A6005757F5 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710316232B6CE0A6005757F5 /* Config.swift */; };
 		710316262B6CE628005757F5 /* HighCpuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710316252B6CE628005757F5 /* HighCpuLoader.swift */; };
-		710316282B6CE82B005757F5 /* simpleLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710316272B6CE82B005757F5 /* simpleLoop.swift */; };
+		710316282B6CE82B005757F5 /* Loop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710316272B6CE82B005757F5 /* Loop.swift */; };
 		7103162A2B6CEB3F005757F5 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710316292B6CEB3F005757F5 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		710316202B6CE045005757F5 /* SerialService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialService.swift; sourceTree = "<group>"; };
 		710316232B6CE0A6005757F5 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		710316252B6CE628005757F5 /* HighCpuLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighCpuLoader.swift; sourceTree = "<group>"; };
-		710316272B6CE82B005757F5 /* simpleLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleLoop.swift; sourceTree = "<group>"; };
+		710316272B6CE82B005757F5 /* Loop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loop.swift; sourceTree = "<group>"; };
 		710316292B6CEB3F005757F5 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +114,7 @@
 				7103161E2B6CE019005757F5 /* SerialServicePool.swift */,
 				710316202B6CE045005757F5 /* SerialService.swift */,
 				710316252B6CE628005757F5 /* HighCpuLoader.swift */,
-				710316272B6CE82B005757F5 /* simpleLoop.swift */,
+				710316272B6CE82B005757F5 /* Loop.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 				710316262B6CE628005757F5 /* HighCpuLoader.swift in Sources */,
 				7103162A2B6CEB3F005757F5 /* ContentViewModel.swift in Sources */,
 				7103161F2B6CE019005757F5 /* SerialServicePool.swift in Sources */,
-				710316282B6CE82B005757F5 /* simpleLoop.swift in Sources */,
+				710316282B6CE82B005757F5 /* Loop.swift in Sources */,
 				710316212B6CE045005757F5 /* SerialService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

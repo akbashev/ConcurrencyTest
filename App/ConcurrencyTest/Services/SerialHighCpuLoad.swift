@@ -9,7 +9,7 @@ actor SerialHighCpuLoad: WithSpecifiedExecutor {
     self.executor = NaiveQueueExecutor(name: threadName)
   }
   
-  func loop() -> HighCpuLoaderResult { simpleLoop() }
+  func loop() -> HighCpuLoaderResult { Loop.execute() }
   
   func execute() async -> HighCpuLoaderResult {
     await withTaskGroup(of: HighCpuLoaderResult.self) { group in
